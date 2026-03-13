@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #f1277b;
+  --color-primary-hover: #d11f6a;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#f8f6f7] text-slate-900 antialiased;
+  }
+}
+
+.glass-card {
+  @apply bg-white border border-[#f1277b]/5 shadow-sm rounded-2xl;
+}
+
+.input-field {
+  @apply w-full rounded-xl border-slate-200 bg-[#f8f6f7] focus:border-primary focus:ring-primary/20 transition-all py-2.5 px-4;
+}
+
+.label-text {
+  @apply block text-sm font-semibold text-slate-700 mb-2;
+}
